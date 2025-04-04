@@ -12,18 +12,79 @@
     <body>
         <font size="32px">Styl zewnętrzny</font>
         <ol type="1">
-            <li><h1>Składnia teoretyczna</h1></li>
-            <li><h1>Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz
-                    ile razy może on występować w dokumencie, jako podłączenie stylu CSS?</h1></li>
-            <li><h1>Jak jest najprostsza forma wstawiania stylu zewnętrznego</h1></li>
-            <li><h1>Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad
-                    musi być zachowana przy większej ilości dołączanych styli?</h1></li>
-            <li><h1>Co się dzieje w przypadku konfliktów?</h1></li>
-            <li><h1>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</h1></li>
-            <li><h1>Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h1></li>
-            <li><h1>Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli?</h1></li>
-            <li><h1>Jakie są zalety zewnętrznego arkusza styli?</h1></li>
-            <li><h1>Uwagi na temat pisania w CSS</h1></li>
+            <li>
+                <h1>Składnia teoretyczna</h1>
+                <textarea readonly="true" rows="4" cols="40">selektor {
+    cecha: wartość;
+}               </textarea>
+            </li>
+            <li>
+                <h1>Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz
+                    ile razy może on występować w dokumencie, jako podłączenie stylu CSS?
+                </h1>
+                <p>Styl zewnętrzny jest wstawiany w sekcji head dokumentu za pomocą znacznika link<br>Przykład:</p>
+                <textarea readonly="true" rows="4" cols="50"><head>
+    <link rel="stylesheet" href="style.css">
+</head>         </textarea>
+            </li>
+            <li>
+                <h1>Jaka jest najprostsza forma wstawiania stylu zewnętrznego</h1>
+                <textarea readonly="true" rows="2" cols="40"><link rel="stylesheet" href="style.css"></textarea>
+            </li>
+            <li>
+                <h1>
+                    Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad
+                    musi być zachowana przy większej ilości dołączanych styli?
+                </h1>
+                <p>Można dołączyć wiele arkuszy styli do jednego dokumentu HTML. Przy większej ilości arkuszy ważna
+                    jest kolejność ich ładowania - późniejsze pliki mogą nadpisywać wcześniejsze reguły
+                </p>
+            </li>
+            <li>
+                <h1>Co się dzieje w przypadku konfliktów?</h1>
+                <p>
+                    Jeśli ten sam styl jest zdefiniowany w róźnych arkuszach, przeglądarka stosuje regułę
+                    z arkusza załadowanego później. Można też użyć specyficzności selektorów oraz reguły
+                    !important, aby nadać priorytet danej właściwości.
+                </p>
+            </li>
+            <li>
+                <h1>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</h1>
+                <p>
+                    Plik CSS można utworzyć i edytować w prostych edytorach tekstowych, np. Notatnik czy Vim.
+                    Plik zapisuje się z rozszerzeniem .css
+                </p>
+            </li>
+            <li>
+                <h1>Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h1>
+                <p>
+                    Specjalne edytory, np. Visual Studio Code, Sublime Text, Brackets,
+                    oferują podświetlanie skłądni, autouzupełnianie oraz podgląd na żywo.
+                </p>
+            </li>
+            <li>
+                <h1>Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli?</h1>
+                <p>Pliki zewnętrznych arkuszy styli mają rozszerzenie .css</p>
+            </li>
+            <li>
+                <h1>Jakie są zalety zewnętrznego arkusza styli?</h1>
+                <ul type="disc">
+                    <li>Oddzielenie stylu od struktury - pozwala na lepszą organizację kodu</li>
+                    <li>Ponowne wykorzystanie - ten sam akrusz można podłączyć od wielu stron</li>
+                </ul>
+            </li>
+            <li>
+                <h1>Uwagi na temat pisania w CSS</h1>
+                <ul type="disc">
+                    <li>Powinno się stosować klasy i identyfikatory, aby unikać zbyt ogólnych selektorów</li>
+                    <li>Powinno się używać jednolitego formatowania</li>
+                    <li>Korzystanie z komentarzy (/* komentarz */), aby opisać sekcje kodu</li>
+                    <li>
+                        W miarę możliwości powinno się stosować zmienne, aby ułatwić zarządzanie kolorami,
+                        czcionkami itd.
+                    </li>
+                </ul>
+            </li>
         </ol>
     </body>
 </html>
