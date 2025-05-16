@@ -1,0 +1,32 @@
+#pogrubienie_olter{
+    font-size: 30px;
+    color: #8a5aca;
+}
+
+#pochylona_olter{
+    font-size: 35pt;
+    color: #eebe66;
+}
+
+#index_gorny_olter{
+    font-size: 1cm;
+    color: #9e8c16;
+}
+
+#index_dolny_olter{
+    font-size: 1.5cm;
+    color: hsl(102, 73%, 32%);
+}
+
+#mono_olter{
+    font-size: 40px;
+    color: #1edc66;
+}
+
+#powiekszenie_olter{
+    color: #583c98;
+}
+
+#pomniejszenie_olter{
+    color: hsl(48, 57%, 47%);
+}
